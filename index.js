@@ -1,14 +1,20 @@
-var num1 = document.getElementById("input1");
+let num1 = document.getElementById("input1");
+console.log(typeof num1);
+let num2 = document.getElementById("input2");
 
-var num2 = document.getElementById("input2");
+let result = document.getElementById("resul");
+let calBtn = document.getElementById("sub");
 
-var result = document.getElementById("resul");
-var calBtn = document.getElementById("sub");
+calBtn.addEventListener("click" ,function(){
+	console.log(typeof num1)
+	return add(num1,num2);
+});
 
-calBtn.addEventListener("click" add)
 
 function add (num1, num2) {
-		    
-		    return result.innerHTML ="G";
-		    
-}
+	console.log('yes')
+return result.innerHTML =  parseInt(num1.value) + parseInt(num2.value);
+
+};
+
+
